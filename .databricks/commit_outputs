@@ -1,0 +1,34 @@
+
+# .databricks/commit_outputs file is used to control whether a notebook's output should be included when committing changes to Git.
+# Outputs are included/excluded at a per notebook level, committing select outputs within a specific notebook is not feasible.
+#
+# Reference:
+# each line in .databricks/commit_outputs represents a glob pattern
+# line starting with # represents a comment
+# notebook that matches a glob pattern will have output included
+# line starting with ! represents a exclusion pattern (i.e. !folder_a/\* will exclude output for all notebooks in folder_a)
+# if a notebook path matches multiple glob patterns, the last matching glob pattern will be used
+# note that glob patterns are case sensitive
+# more examples can be found here: https://docs.databricks.com/repos/repos-setup.html#patterns-for-a-repo-config-file
+
+# Uncomment the following pattern to include output for all notebooks
+# **
+ 
+pyspark_notebooks/ingestion/1.ingest_circuits_file.ipynb
+pyspark_notebooks/ingestion/2.ingest_races_file.ipynb
+pyspark_notebooks/ingestion/3.ingest_constructors_file.ipynb
+pyspark_notebooks/ingestion/4.ingest_drivers_file.ipynb
+pyspark_notebooks/ingestion/5.ingest_results_file.ipynb
+pyspark_notebooks/ingestion/6.ingest_pit_stops_file.ipynb
+pyspark_notebooks/ingestion/7.ingest_lap_times_file.ipynb
+pyspark_notebooks/ingestion/8.ingest_qualifying_file.ipynb
+pyspark_notebooks/set-up/1.access_adls_using_access_keys.ipynb
+pyspark_notebooks/set-up/2.access_adls_using_sas_token.ipynb
+pyspark_notebooks/set-up/3.access_adls_using_service_principal.ipynb
+pyspark_notebooks/set-up/4.explore_dbfs_root.ipynb
+pyspark_notebooks/set-up/6.mount_adls_containers_for_project.ipynb
+!pyspark_notebooks/trans/1.race_results.ipynb
+pyspark_notebooks/trans/2.driver_standings.ipynb
+pyspark_notebooks/trans/3.constructor_standings.ipynb
+pyspark_notebooks/trans/0.create_presentation_database.ipynb
+pyspark_notebooks/demo/6.delta_lake_demo.ipynb
