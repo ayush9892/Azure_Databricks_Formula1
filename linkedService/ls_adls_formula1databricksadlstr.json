@@ -1,0 +1,11 @@
+{
+	"name": "ls_adls_formula1databricksadlstr",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://formula1databricksadlstr.dfs.core.windows.net/"
+		}
+	}
+}

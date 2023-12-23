@@ -1,0 +1,9 @@
+{
+	"name": "formula1-databricks-adf-linking",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "66065b13-a65f-4035-82ec-9b3d83e6dbd9",
+		"tenantId": "84c31ca0-ac3b-4eae-ad11-519d80233e6f"
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"name": "ds_formula1_raw",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_formula1databricksadlstr",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_window_end_date": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@formatDateTime(dataset().p_window_end_date, 'yyyy-MM-dd')",
+					"type": "Expression"
+				},
+				"fileSystem": "raw"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
