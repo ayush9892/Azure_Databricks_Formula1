@@ -27,8 +27,8 @@ pyspark_notebooks/set-up/2.access_adls_using_sas_token.ipynb
 pyspark_notebooks/set-up/3.access_adls_using_service_principal.ipynb
 pyspark_notebooks/set-up/4.explore_dbfs_root.ipynb
 pyspark_notebooks/set-up/6.mount_adls_containers_for_project.ipynb
-!pyspark_notebooks/trans/1.race_results.ipynb
 pyspark_notebooks/trans/2.driver_standings.ipynb
 pyspark_notebooks/trans/3.constructor_standings.ipynb
 pyspark_notebooks/trans/0.create_presentation_database.ipynb
 pyspark_notebooks/demo/6.delta_lake_demo.ipynb
+pyspark_notebooks/trans/1.race_results.ipynb
